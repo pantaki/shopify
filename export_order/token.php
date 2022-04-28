@@ -4,8 +4,8 @@
 require_once("inc/function.php");
 
 // Set varibles for our request
-$api_key = "f725a2b0f04922ff794632b712428bc2";
-$shared_secret ="76c167abeefe67a11dfeab66802ec956";
+$api_key = "8b9a6586221aae268f14a4f3df87828d";
+$shared_secret ="1303b9ee954a4c64e97f4582ba241f2a";
 $params = $_GET;
 $hmac = $_GET['hmac'];
 
@@ -40,7 +40,7 @@ if (hash_equals($hmac, $computed_hmac)) {
     $result = json_decode($result, true);
     $access_token = $result['access_token'];
 
-//    echo $access_token;
+    echo $access_token;
 
 //    header("Location: https://" . $params['shop']. "/admin/apps");
 //    exit();

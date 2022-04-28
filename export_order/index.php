@@ -14,7 +14,7 @@ ksort($params);
 $hmac = $_GET['hmac'];
 
 
-$access_token = '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';
+$access_token = '';
 $orders = shopify_call($access_token, $shop, "/admin/api/2022-01/orders.json?status=any", array(), 'GET');
 //$orders = json_decode($orders['response'], JSON_PRETTY_PRINT);
 //echo '<pre>';
